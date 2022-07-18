@@ -1,27 +1,27 @@
 package entidades;
 
-public class Produto {
+public class Produto02 {
 
-	private String nome;
-	private double preco;
-	private int qtd;
+	public String nome;
+	public double preco;
+	public int qtd;
 	
 	// Construtor Padrão Java sem especificação de parâmetros
-	public Produto() {
+	public Produto02() {
 	}
 	
 	// Definindo um Construtor Java especificando parâmetros.
-	public Produto (String nome, double preco, int qtd) {
+	public Produto02 (String nome, double preco, int qtd) {
 		this.nome = nome;
 		this.preco = preco;
 		this.qtd = qtd;
 	}
 	
-	public Produto (String nome, double preco) {
+	// Neste exemplo de construtor, como não foi passado o parâmetro de quantidade,
+	// a mesma vai ser inicializada com o valor zerado.
+	public Produto02 (String nome, double preco) {
 		this.nome = nome;
 		this.preco = preco;
-		// Neste exemplo de construtor, como não foi passado o parâmetro de quantidade,
-		// a mesma vai ser inicializada com o valor zerado.
 	}
 
 	// Defininfo Getters e Setters para manipulação de valores dos atributos.
@@ -46,15 +46,15 @@ public class Produto {
 		return qtd;
 	}
 	
-	public double ValorTotalEmEstoque() {
+	public double valorTotalEmEstoque() {
 		return preco * qtd;
 	}
 	
-	public void AdicionarProduto(int qtd) {
+	public void adicionarProduto(int qtd) {
 		this.qtd += qtd;
 	}
 	
-	public void RemoverProduto(int qtd) {
+	public void removerProduto(int qtd) {
 		this.qtd -= qtd;
 	}
 	
@@ -66,6 +66,6 @@ public class Produto {
 				+ ", " 
 				+ qtd 
 				+ " unidades, Total: R$ " 
-				+ String.format("%.2f", ValorTotalEmEstoque());
+				+ String.format("%.2f", valorTotalEmEstoque());
 	}
 }

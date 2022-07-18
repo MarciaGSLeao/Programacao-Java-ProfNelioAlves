@@ -17,13 +17,13 @@ public class Exerc05_MediaAluno {
 		System.out.println("Informe a nota do 3º trimestre: ");
 		aluno.n3 = entrada.nextDouble();
 		
-		if (aluno.TotalDePontos() >= 60) {
-			System.out.printf("\nPontuação Final: %.2f", aluno.TotalDePontos());
+		if (aluno.totalDePontos() >= 60) {
+			System.out.printf("\nPontuação Final: %.2f", aluno.totalDePontos());
 			System.out.println("\nAprovado!");
 		}else {
-			System.out.printf("\nPontuação Final: %.2f", aluno.TotalDePontos());
+			System.out.printf("\nPontuação Final: %.2f", aluno.totalDePontos());
 			System.out.println("\nReprovado!");
-			System.out.printf("\nFaltam %.2f para a pontuação mínima.", aluno.PontosFaltantes());
+			System.out.printf("\nFaltam %.2f para a pontuação mínima.", aluno.pontosFaltantes());
 		}
 		
 		entrada.close();

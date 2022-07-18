@@ -1,7 +1,8 @@
 package sec08_POO;
 
 import java.util.Scanner;
-import entidades.Produto;
+
+import entidades.Produto02;
 
 public class Exerc02_Produto {
 
@@ -9,7 +10,7 @@ public class Exerc02_Produto {
 		
 		Scanner entrada = new Scanner(System.in);
 		
-		/* Produto produto = new Produto();
+		Produto02 produto = new Produto02();
 		
 		System.out.println("Informe os dados do produto: ");
 		System.out.print("Nome: ");
@@ -25,16 +26,16 @@ public class Exerc02_Produto {
 		System.out.println();
 		System.out.print("Entre com o número de produtos que deseja adicionar: ");
 		int qtd = entrada.nextInt();
-		produto.AdicionarProduto(qtd);
+		produto.adicionarProduto(qtd);
 		System.out.println("Dados atualizados: ");
 		System.out.println(produto.toString());
 		
 		System.out.println();
 		System.out.print("Entre com o número de produtos que deseja remover: ");
 		qtd = entrada.nextInt();
-		produto.RemoverProduto(qtd);
+		produto.removerProduto(qtd);
 		System.out.println("Dados atualizados: ");
-		System.out.println(produto.toString());*/
+		System.out.println(produto.toString());
 		
 		entrada.close();
 	}

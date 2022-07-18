@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import entidades.Esfera;
 
-public class Exerc06_ProgramEsfera {
+public class Exerc06_ProgramaEsfera {
 	
 	public static void main(String[] args) {
 		

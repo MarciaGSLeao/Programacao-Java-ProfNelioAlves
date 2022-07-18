@@ -5,15 +5,15 @@ public class Retangulo {
 	public double largura;
 	public double altura;
 	
-	public double Area() {
+	public double area() {
 		return largura*altura;
 	}
 	
-	public double Perimetro() {
+	public double perimetro() {
 		return 2*largura + 2*altura;
 	}
 	
-	public double Diagonal() {
+	public double diagonal() {
 		return Math.sqrt(largura*largura + altura*largura);
 	}
 	

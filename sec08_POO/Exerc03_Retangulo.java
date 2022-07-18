@@ -17,9 +17,9 @@ public class Exerc03_Retangulo {
 		retangulo.largura = entrada.nextDouble();
 		
 		System.out.println();
-		System.out.println("ÁREA: " + retangulo.Area());
-		System.out.println("PERÍMETRO: " + retangulo.Perimetro());
-		System.out.println("DIAGONAL: " + String.format("%.2f", retangulo.Diagonal()));
+		System.out.println("ÁREA: " + retangulo.area());
+		System.out.println("PERÍMETRO: " + retangulo.perimetro());
+		System.out.println("DIAGONAL: " + String.format("%.2f", retangulo.diagonal()));
 		
 		entrada.close();
 	}

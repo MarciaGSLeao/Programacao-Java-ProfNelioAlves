@@ -7,14 +7,13 @@ public class Aluno {
 	public double n2;
 	public double n3;
 	
-	public double TotalDePontos() {
+	public double totalDePontos() {
 		return n1+n2+n3;
 	}
 	
-	public double PontosFaltantes() {
-		
-		if (this.TotalDePontos() < 60) {
-			return 60 - this.TotalDePontos();
+	public double pontosFaltantes() {
+		if (this.totalDePontos() < 60) {
+			return 60 - this.totalDePontos();
 		}else {
 			return 0.0 ;
 		}

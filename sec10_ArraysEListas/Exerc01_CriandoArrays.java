@@ -6,28 +6,21 @@ public class Exerc01_CriandoArrays {
 	
 	public static void main(String[] args) {
 		
-		int n;
-		double soma = 0.0;
-		double media;
-		double[] alturas;
-		
 		Scanner sc = new Scanner(System.in);
-
-		System.out.print("Informe o total de pessoas: ");
-		n = sc.nextInt();
 		
-		alturas = new double[n];
+		System.out.println("Quantos alturas deseja contabilizar? ");
+		int n = sc.nextInt();
+		double[] vetor = new double[n];
+		double soma = 0;
 		
-		System.out.printf("\nInforme as %d medidas de altura: \n", n);
-		
-		for (int p = 0; p < n; p++) {
-			alturas[p] = sc.nextDouble();
-			soma = soma + alturas[p];
+		for (int i=0; i<n; i++) {
+			System.out.printf("Informe a %dª altura: ", i+1);
+			vetor[i] = sc.nextDouble();
+			soma += vetor[i];
 		}
-				
-		media = soma/n;
 		
-		System.out.printf("\nMédia: %.2f", media);
+		double media = soma/n;
+		System.out.printf("\nA média das alturas é %.2f", media);
 		
 		sc.close();
 	}

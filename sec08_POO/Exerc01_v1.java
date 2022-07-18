@@ -14,18 +14,20 @@ public class Exerc01_v1 {
 		
 		Scanner entrada = new Scanner(System.in);
 		
+		double xA, xB, xC, xP, yA, yB, yC, yP;
+		
 		System.out.println("Informe as medidas dos lados do primeiro triângulo: ");
-		double xA = entrada.nextDouble();
-		double xB = entrada.nextDouble();
-		double xC = entrada.nextDouble();
+		xA = entrada.nextDouble();
+		xB = entrada.nextDouble();
+		xC = entrada.nextDouble();
 		
 		System.out.println("Informe as medidas dos lados do segundo triângulo: ");
-		double yA = entrada.nextDouble();
-		double yB = entrada.nextDouble();
-		double yC = entrada.nextDouble();
+		yA = entrada.nextDouble();
+		yB = entrada.nextDouble();
+		yC = entrada.nextDouble();
 		
-		double xP = (xA + xB + xC) / 2;
-		double yP = (yA + yB + yC) / 2;
+		xP = (xA + xB + xC) / 2.0;
+		yP = (yA + yB + yC) / 2.0;
 		double xArea = Math.sqrt(xP*(xP-xA)*(xP-xB)*(xP-xC));
 		double yArea = Math.sqrt(yP*(yP-yA)*(yP-yB)*(yP-yC));
 

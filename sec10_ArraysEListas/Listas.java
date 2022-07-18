@@ -13,21 +13,23 @@ public class Listas {
 		lista.add("Márcia");
 		lista.add("João");
 		lista.add("Felipe");
-		lista.add(1, "Lelê");
-		
 		for (String elemento : lista) {
 			System.out.println(elemento);
 		}
 		
-		System.out.printf("\nA lista de nomes possui %d elementos.\n", lista.size());
-		System.out.println("--------------------------------------");
+		System.out.printf("A lista de nomes possui %d elementos.\n\n", lista.size());
 		
-		lista.removeIf(elemento -> elemento.charAt(0) == 'M');
-		
+		lista.add(1, "Lelê");
 		for(String elemento : lista) {
 			System.out.println(elemento);
 		}
 		
+		lista.removeIf(elemento -> elemento.charAt(0) == 'M');
+		for(String elemento : lista) {
+			System.out.println(elemento);
+		}
+		
+		// ANALISAAAAAAAAAAAAAAAAAAAAAAAAAR.
 		List<String> novaLista = lista.stream().filter(elemento -> elemento.charAt(0) == 'L').collect(Collectors.toList());
 		System.out.println(novaLista);
 	

@@ -1,6 +1,7 @@
 package sec08_POO;
 
 import java.util.Scanner;
+
 import entidades.Triangulo;
 
 public class Exerc01_v2 {
@@ -11,7 +12,6 @@ public class Exerc01_v2 {
 		// Ler as medidas do lado de dois triângulo distintos
 		// em seguida mostrar o valor da área de cada um
 		// e qual triângulo possui maior área.
-		// Usar a fórmula de Heron.
 		
 		Scanner entrada = new Scanner(System.in);
 		

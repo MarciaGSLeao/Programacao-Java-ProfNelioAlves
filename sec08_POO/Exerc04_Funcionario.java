@@ -24,7 +24,7 @@ public class Exerc04_Funcionario {
 		System.out.println();
 		System.out.println("Qual percentual de aumento deseja aplicar ao salário bruto do funcionário? ");
 		double percentualAumento = entrada.nextDouble();
-		funcionario.AplicarAumento(percentualAumento);
+		funcionario.aplicarAumento(percentualAumento);
 		
 		System.out.println();
 		System.out.println("Os dados do funcionário foram atualizados! \n");

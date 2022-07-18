@@ -6,17 +6,20 @@ public class Funcionario {
 	public double salarioBruto;
 	public double descontos;
 	
-	public String toString() {
-		double salarioLiquido = salarioBruto - descontos;
-		return "Dados do Funcionário \nNome: "
-				+ nome 
-				+ "\nSalário Bruto: R$ "
-				+ salarioBruto
-				+ "\nSalário Líquido: R$ "
-				+ salarioLiquido;
+	public double salarioLiquido() {
+		return this.salarioBruto - this.descontos;
 	}
 	
-	public void AplicarAumento(double percentual) {
+	public void aplicarAumento(double percentual) {
 		this.salarioBruto = salarioBruto*(1 + percentual/100);
+	}
+	
+	public String toString() {
+		return "Dados do Funcionário \nNome: "
+		+ nome 
+		+ "\nSalário Bruto: R$ "
+		+ String.format("%.2f", salarioBruto)
+		+ "\nSalário Líquido: R$ "
+		+ String.format("%.2f", salarioLiquido());
 	}
 }

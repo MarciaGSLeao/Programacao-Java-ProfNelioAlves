@@ -2,7 +2,7 @@ package sec10_ArraysEListas;
 
 import java.util.Scanner;
 
-import entidades.Produto_v2;
+import entidades.Produto02;
 
 public class Exerc02_ArraysProdutos {
 	
@@ -12,7 +12,7 @@ public class Exerc02_ArraysProdutos {
 		
 		System.out.print("Quantos produtos deseja cadastrar? ");
 		int n = sc.nextInt();
-		Produto_v2[] listaProdutos = new Produto_v2[n];
+		Produto02[] listaProdutos = new Produto02[n];
 		
 		System.out.println("Informe abaixo o nome e o preço do produtos, respectivamente:");
 		double soma = 0.0;
@@ -23,13 +23,12 @@ public class Exerc02_ArraysProdutos {
 			double preco = sc.nextDouble();
 			soma += preco;
 			
-			listaProdutos[p] = new Produto_v2(nome, preco);
+			listaProdutos[p] = new Produto02(nome, preco);
 		}
 		
 		double media = soma/n;
 		
-		System.out.printf("A média dos valores é R$ %.2f%n", media);
-		//System.out.println(listaProdutos[1].getNome());
+		System.out.printf("A média dos preços é R$ %.2f%n", media);
 		
 		sc.close();
 	}

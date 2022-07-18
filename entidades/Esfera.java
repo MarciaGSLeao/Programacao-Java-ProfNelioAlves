@@ -7,7 +7,7 @@ public class Esfera {
 	// de instanciar um objeto da classe a qual desejo obter o método
 	// na classe do programana principal.
 	
-	public static final double PI = 3.14;
+	public static final double PI = Math.PI;
 	
 	public static double circunferencia(double raio) {
 		return 2 * PI * raio;
